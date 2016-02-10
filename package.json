@@ -7,6 +7,17 @@
     "start": "NODE_PATH=$NODE_PATH:./src node server",
     "dev": "npm start & webpack-dev-server --progress --colors"
   },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "rules": {}
+  },
   "keywords": [],
   "author": "Caleb Scholze <jcsdevel@gmail.com>",
   "license": "MIT",
@@ -19,6 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
+    "babel-eslint": "^4.1.8",
     "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.3.13",
     "bootstrap-loader": "^1.0.7",
