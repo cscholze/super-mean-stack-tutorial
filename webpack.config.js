@@ -4,8 +4,8 @@ var path = require('path');
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://127.0.0.1:8080/',
-    'webpack/hot/only-dev-server',
+     'webpack-dev-server/client?http://127.0.0.1:8080/',
+     'webpack/hot/only-dev-server',
     'bootstrap-loader',
     './src'
   ],
@@ -15,7 +15,7 @@ module.exports = {
   },
   resolve: {
     modulesDirectories: ['node_modules', 'src'],
-    extension: ['', '.js']
+    extension: ['', '.js', '.scss']
   },
   module: {
     loaders: [
@@ -49,14 +49,14 @@ module.exports = {
       loader: 'imports?jQuery=jquery'
     }
     ]
-  },
-  plugins: [
+   },
+   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ],
-  devServer: {
-    hot: true,
-    proxy: {
+   ],
+   devServer: {
+     hot: true,
+     proxy: {
       '*': 'http://localhost:3000'
     }
   }
