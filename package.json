@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "NODE_PATH=$NODE_PATH:./src node server",
-    "dev": "npm start & webpack-dev-server --progress --colors"
+    "dev": "npm start & webpack-dev-server --progress --colors",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "env": {
@@ -29,7 +31,8 @@
     "express": "^4.13.4",
     "jquery": "^2.2.0",
     "kerberos": "0.0.18",
-    "mongoose": "^4.4.3"
+    "mongoose": "^4.4.3",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -48,5 +51,6 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
