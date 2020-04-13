@@ -27,7 +27,7 @@
     "body-parser": "^1.14.2",
     "bootstrap-sass": "^3.3.6",
     "express": "^4.13.4",
-    "jquery": "^2.2.0",
+    "jquery": "^3.5.0",
     "kerberos": "0.0.18",
     "mongoose": "^4.4.3"
   },
