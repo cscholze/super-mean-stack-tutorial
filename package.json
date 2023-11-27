@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-ui-router": "^0.2.17",
+    "angular-ui-router": "^1.0.0",
     "body-parser": "^1.14.2",
     "bootstrap-sass": "^3.3.6",
     "express": "^4.13.4",
